@@ -12,7 +12,8 @@
     document.getElementById('init_sub').addEventListener('click', function() { // По клику на кнопку..
     try {
         var akPush = new AKPush();
-        akPush.initSubscription() // ..показать форму подписки
+        
+        akPush.initSubscription({ email: 'alexander.popov@altcraft.com' }) // ..показать форму подписки
         }
     catch (e) {
         console.log(e); // Или записать ошибку в консоль браузера
