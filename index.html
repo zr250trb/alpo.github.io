@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://pxl.alexander-popov.dev.altkraft.com/ak_container.js?id=MXwxNA.." ></script>
+</head>
+<body>
+    <button id="init_sub">Подписаться на уведомления</button>
+<script>
+
+    document.getElementById('init_sub').addEventListener('click', function() { // По клику на кнопку..
+    try {
+        var akPush = new AKPush();
+        akPush.initSubscription() // ..показать форму подписки
+        }
+    catch (e) {
+        console.log(e); // Или записать ошибку в консоль браузера
+        }
+    });
+</script>
+</body>
+</html>
