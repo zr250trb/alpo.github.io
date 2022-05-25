@@ -1,6 +1,5 @@
-
 {
-  "permissions": [],
+  "permissions": [ "activeTab" ],
   "name": "https://zr250trb.github.io",
   "display": "standalone"
 }
